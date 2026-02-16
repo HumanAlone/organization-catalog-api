@@ -73,14 +73,16 @@ uvicorn main:app --reload
 
 ### 2. Запуск через Docker
 
+> 💡 Создайте .env и добавьте ключ!
+
 ```bash
 # Сборка образа
 docker build -t org-catalog-api .
 ```
 
 ```bash
-# Запуск контейнера с ключом
-docker run -p 8000:8000 -e API_KEY="secret" org-catalog-api
+# Запуск контейнера
+docker run -p 8000:8000 org-catalog-api
 ```
 
 ## API Endpoints
