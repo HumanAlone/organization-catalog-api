@@ -415,8 +415,8 @@ curl -H "X-API-Key: secret" "http://localhost:8000/buildings/nearby?lat=55.7558&
 ## Документация API
 > 💡 Не забудьте добавить ключ!
 
-Swagger UI: http://localhost:8000/docs  
-ReDoc: http://localhost:8000/redoc
+Swagger UI: http://149.154.70.253:8000/docs  
+ReDoc: http://149.154.70.253:8000/redoc
 
 ## Модель данных
 База данных включает 5 таблиц:
