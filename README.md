@@ -110,8 +110,6 @@ X-API-Key: secret
 }
 ```
 
----
-
 ### Организации в здании
 **GET organizations/building/1**
 
@@ -159,8 +157,6 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/building/1
 Ошибки:
 - 404 Not Found: {"detail": "Здание с ID 999 не найдено"}
 
----
-
 ### Организации по виду деятельности
 **GET /organizations/business/1**
 
@@ -207,8 +203,6 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/business/1
 
 Ошибки:
 - 404 Not Found: {"detail": "Вид деятельности с ID 999 не найден"}
-
----
 
 ### Рекурсивный поиск по бизнесу
 **GET businesses/1/organizations**
@@ -259,8 +253,6 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/business/1
 Ошибки:
 - 404 Not Found: {"detail": "Вид деятельности с ID 999 не найден"}
 
----
-
 ### Информация об организации
 **GET organizations/1**
 
@@ -291,8 +283,6 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/1
 
 Ошибки
 - 404 Not Found: {"detail": "Организация с ID 999 не найдена"}
-
----
 
 ### Поиск по названию
 **GET organizations/search**
@@ -338,8 +328,6 @@ curl -H "X-API-Key: secret" "http://localhost:8000/organizations/search?name=р�
 ]
 ```
 
----
-
 ### Геопоиск организаций
 **GET organizations/nearby**
 
@@ -383,8 +371,6 @@ curl -H "X-API-Key: secret" "http://localhost:8000/organizations/nearby?lat=55.7
   }
 ]
 ```
-
----
 
 ### Геопоиск зданий
 **GET buildings/nearby**
