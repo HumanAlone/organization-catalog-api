@@ -93,7 +93,6 @@ docker run -p 8000:8000 org-catalog-api
 Все запросы должны содержать заголовок:
 X-API-Key: secret
 
-
 ### Health Check
 **GET /**   
 
@@ -109,6 +108,8 @@ X-API-Key: secret
   "description": "Тестовое задание на должность разработчика"
 }
 ```
+
+---
 
 ### Организации в здании
 **GET organizations/building/1**
@@ -157,6 +158,8 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/building/1
 Ошибки:
 - 404 Not Found: {"detail": "Здание с ID 999 не найдено"}
 
+---
+
 ### Организации по виду деятельности
 **GET /organizations/business/1**
 
@@ -203,6 +206,8 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/business/1
 
 Ошибки:
 - 404 Not Found: {"detail": "Вид деятельности с ID 999 не найден"}
+
+---
 
 ### Рекурсивный поиск по бизнесу
 **GET businesses/1/organizations**
@@ -253,6 +258,8 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/business/1
 Ошибки:
 - 404 Not Found: {"detail": "Вид деятельности с ID 999 не найден"}
 
+---
+
 ### Информация об организации
 **GET organizations/1**
 
@@ -283,6 +290,8 @@ curl -H "X-API-Key: secret" http://localhost:8000/organizations/1
 
 Ошибки
 - 404 Not Found: {"detail": "Организация с ID 999 не найдена"}
+
+---
 
 ### Поиск по названию
 **GET organizations/search**
@@ -328,6 +337,8 @@ curl -H "X-API-Key: secret" "http://localhost:8000/organizations/search?name=р�
 ]
 ```
 
+---
+
 ### Геопоиск организаций
 **GET organizations/nearby**
 
@@ -372,6 +383,8 @@ curl -H "X-API-Key: secret" "http://localhost:8000/organizations/nearby?lat=55.7
 ]
 ```
 
+---
+
 ### Геопоиск зданий
 **GET buildings/nearby**
  
@@ -397,6 +410,8 @@ curl -H "X-API-Key: secret" "http://localhost:8000/buildings/nearby?lat=55.7558&
   }
 ]
 ```
+
+---
 
 ## Документация API
 > 💡 Не забудьте добавить ключ!
